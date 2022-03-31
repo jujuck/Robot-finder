@@ -1,8 +1,9 @@
 import React from 'react';
-/** Import de la donnée */
 import './App.css';
-
+/** Import de la donnée */
 import Robots from './data/data';
+/** Import de composant */
+import RobotCard from './components/RobotCard';
 
 function App() {
   console.log(Robots)
@@ -10,14 +11,7 @@ function App() {
     <div className="App">
       <h1>Robot Finder</h1>
       <div className="robotContainer">
-        {Robots.map((robot) => {
-          return (<div key={robot.id} className="robotCard">
-            <h3>{robot.name}</h3>
-            <h4>{robot.username}</h4>
-            <p><b>Email : </b><small>{robot.email}</small></p>
-            <p><b>WebSite : </b><small>{robot.website}</small></p>
-          </div>)
-        })}
+        {Robots.map((robot) => <RobotCard key={robot.id} robot={robot} />)}
       </div>
     </div>
   );
