@@ -22,3 +22,19 @@ body {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+.btn {
+  padding: 2% 25%;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+}
+
+.btn-green {
+  background-color: green;
+  color: white;
+}
