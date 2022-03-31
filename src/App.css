@@ -1,4 +1,24 @@
+body {
+  background: linear-gradient(90deg, rgba(131,202,217,1) 20%, rgba(231,231,231,1) 100%);
+}
+
 .App {
   text-align: center;
 }
 
+.robotContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.robotCard {
+  background: white;
+  flex: 1;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 1%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
