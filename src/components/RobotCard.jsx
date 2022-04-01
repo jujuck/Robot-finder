@@ -4,7 +4,7 @@ import RobotAdress from './RobotAdress';
 
 const RobotCard = ({ robot }) => {
   return (
-    <div className="robotCard">
+    <div className="card">
       <h3>{robot.name}</h3>
       <h4>{robot.username}</h4>
       <p><b>Email : </b><small>{robot.email}</small></p>

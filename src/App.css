@@ -12,7 +12,7 @@ body {
   justify-content: space-around;
 }
 
-.robotCard {
+.card {
   background: white;
   flex: 1;
   border: 1px solid black;
@@ -43,4 +43,18 @@ body {
 .img-robot {
   max-width: 200px;
   border-radius: 25px;
+}
+
+.searchContainer {
+  margin: 5%;
+  padding: 5%
+}
+
+.searchContainer input {
+  margin: 2%;
+  background-color: lightgray;
+  padding: 2%;
+  border-radius: 15px;
+  border: none;
+  font-style: italic;
 }
