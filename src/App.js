@@ -4,6 +4,7 @@ import './App.css';
 import Robots from './data/data';
 /** Import de composant */
 import RobotCard from './components/RobotCard';
+import Search from './components/Search';
 
 function App() {
   const [search, setSearch] = useState('')
@@ -11,13 +12,12 @@ function App() {
     <div className="App">
       <h1>Robot Finder</h1>
       <div class="searchContainer card">
-        <label>
-          Filtrer vos robots par nom
-          <input type="text" value={search} onChange={(event) => setSearch(event.target.value)} />
-        </label>
+        <Search search={search} handleSearchUpdate={setSearch} />
       </div>
       <div className="robotContainer">
-        {Robots.map((robot) => <RobotCard key={robot.id} robot={robot} />)}
+        {Robots
+          .filter(robot => robot.name.includes(search))
+          .map((robot) => <RobotCard key={robot.id} robot={robot} />)}
       </div>
     </div>
   );
