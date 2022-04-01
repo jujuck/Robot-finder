@@ -38,3 +38,9 @@ body {
   background-color: green;
   color: white;
 }
+
+
+.img-robot {
+  max-width: 200px;
+  border-radius: 25px;
+}
