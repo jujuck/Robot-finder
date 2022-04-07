@@ -2,10 +2,10 @@ import React from 'react';
 /** Import de la donnée */
 import './App.css';
 
-import Robot from './data/data';
+import Robots from './data/data';
 
 function App() {
-  console.log(Robot)
+  console.log(Robots)
   return (
     <div className="App">
       <h1>Robot Finder</h1>
